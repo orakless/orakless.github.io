@@ -1,0 +1,81 @@
+@font-face {
+	font-family: "mono";
+	src: url("fonts/Fira-Code.ttf")
+}
+
+:root {
+	background: #111;
+	font-family: mono, monospace;
+	color: white;
+}
+
+@keyframes background {
+	0% {background: #AAAAFF}
+	33% {background: #AAFFAA}
+	66% {background: #FFAAAA}
+	100% {background: #AAAAFF}
+}
+
+@keyframes text {
+	0% {color: #AAAAFF; border-color: #AAAAFF}
+	33% {color: #AAFFAA; border-color: #AAFFAA}
+	66% {color: #FFAAAA; border-color: #FFAAAA}
+	100% {color: #AAAAFF; border-color: #AAAAFF}
+}
+
+@media only screen and (min-width: 860px) {
+	body {
+		margin: auto;
+	}
+}
+
+h2 {
+	margin-bottom: 0;
+}
+
+p {
+	margin-top: 0;
+	text-align: justify;
+}
+
+underline {
+	border-bottom: 2px solid;
+}
+
+body {
+	max-width: 800px;
+}
+
+.green, a {
+	color: #AAAAFF;
+	animation-name: text;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+
+.tag {
+	background: #AAAAFF;
+	animation-name: background;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	color: black;
+	padding: 0 0.25em 0 0.25em;
+	text-decoration: none;
+	border-radius: 0.5em;
+}
+
+.tag:hover, .tag:active, .tag:focus {
+	text-decoration: underline;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: #111;
+	border-top: solid 2px;
+}
+
+footer p {
+	text-align: center;
+}
