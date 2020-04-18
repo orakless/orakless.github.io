@@ -1,0 +1,88 @@
+@font-face {
+	font-family: "mono";
+	src: url("fonts/Fira-Code.ttf")
+}
+
+:root {
+	font-family: mono, monospace;
+	font-size: 1.2em;
+}
+
+html {
+	background: var(--primary-color);
+	color: var(--text-color);
+	border-color: var(--text-color)
+}
+
+@media only screen and (min-width: 860px) {
+	body {
+		margin: auto;
+	}
+}
+
+h2 {
+	margin-bottom: 0;
+}
+
+p {
+	margin-top: 0;
+	text-align: justify;
+}
+
+a.link, underline {
+	border-bottom: 2px solid;
+	text-decoration: none;
+}
+
+body {
+	max-width: 800px;
+}
+
+.green, a {
+	color: #AAAAFF;
+	animation-name: text;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+
+a.link:hover, a.link:active, a.link:focus {
+	background: var(--hover-color);
+}
+
+.tag {
+	background: #AAAAFF;
+	animation-name: background;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	color: black;
+	padding: 0 0.25em 0 0.25em;
+	text-decoration: none;
+	border-radius: 0.5em;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: var(--primary-color);
+	border-top: solid 2px;
+}
+
+footer p {
+	text-align: center;
+}
+
+#screenshots {
+	display: flex;
+}
+
+.screenshot {
+	margin: 0.5em;
+	max-width: 200px;
+	border: 0.25em solid;
+}
+
+.screenshot:hover, .screenshot:active, .screenshot:focus {
+	transform: scale(1.5);
+
+}
